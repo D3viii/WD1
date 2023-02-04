@@ -1,0 +1,11 @@
+body {
+    background-color: #CCCCCC;
+}
+header {
+    background-color: #0000FF;
+    color: black;
+}
+h1 {
+    color: #0000FF;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
