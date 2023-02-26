@@ -1,0 +1,197 @@
+body {
+  background-color: #5280c5;
+  color: #003366;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, Arial;
+}
+main {
+  background-color: #ffffff;
+  border-color: #aec3e3;
+  overflow: auto;
+  display: block;
+}
+section {
+  margin-right: 1em;
+  margin-bottom: 1em;
+  padding: 0;
+  background-color: #eaeaea;
+}
+section h3 {
+  padding: 0.25em;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 110%;
+  background-color: #aec3e3;
+}
+section p {
+  padding-top: 0;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+  padding-bottom: 0.25em;
+}
+nav {
+  text-align: center;
+}
+nav a {
+  text-decoration: none;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  width: 100%;
+  border-bottom-style: solid;
+  border-bottom: 1px;
+}
+nav a:link {
+  color: #000066;
+}
+nav a:visited {
+  color: #5280c5;
+}
+nav a:hover {
+  color: #3262a3;
+}
+nav ul {
+  list-style-type: none;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+}
+* {
+  box-sizing: border-box;
+}
+header {
+  background-color: #000066;
+  background-image: url(../fishcreek4/lilfish.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 1em;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+}
+header a:link {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+header a:visited {
+  color: #f0f0f0;
+}
+header a:hover {
+  color: #aec3e3;
+}
+h1 {
+  font-size: 2em;
+  padding: 2em;
+  text-shadow: #cccccc;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 1.2em;
+  text-shadow: 1px 1px 1px #777;
+}
+dt {
+  color: #5280c5;
+  size: 1.1em;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.category {
+  font-weight: bold;
+  color: #5380c5;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+footer {
+  font-size: small;
+  font-style: italic;
+  text-align: center;
+  padding: 1em;
+  background-color: #aec3e3;
+}
+
+.address {
+  clear: left;
+}
+.floatright {
+}
+#wrapper {
+  background-color: #f0f0f0;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+.footer-nav {
+  background-color: #f0f0f0;
+  font-size: 110%;
+  padding-bottom: 0.5em;
+}
+#mobile {
+  display: inline;
+}
+#desktop {
+  display: none;
+}
+@media (min-width: 600px) {
+  header {
+    background-image: url(../fishcreek4/bigfish.gif);
+  }
+  h1 {
+    font-size: 3em;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+  nav a {
+    border-bottom: none;
+  }
+  #flow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #section {
+    
+    flex: 1;
+  }
+  dl {
+    flex: 2;
+  }
+  img {
+    flex: 1;
+  }
+  #mobile {
+    display: none;
+  }
+  #desktop {
+    display: inline;
+  }
+}
+@media (min-width: 1024px) {
+  header {
+    grid-area: header;
+  }
+  nav {
+    grid-area: nav;
+  }
+  main {
+    grid-area: main;
+  }
+  footer {
+    grid-area: footer;
+  }
+  #wrapper {
+    display: grid;
+    grid-template:
+      "header header"
+      "nav main"
+      "nav footer"
+      / 180px;
+  }
+  nav ul {
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 1.25em;
+  }
+}
