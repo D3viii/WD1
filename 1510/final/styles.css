@@ -1,0 +1,40 @@
+.row {
+  display: flex;
+  background-color: darkgray;
+}
+.imgrow {
+  background-color: darkgray;
+}
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+body {
+  background-color: rgb(5, 21, 195);
+  font-family: Verdana, Arial, sans-serif;
+}
+
+nav {
+  text-align: center;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5em;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  border-bottom: 1px solid #aec3e3;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  width: 100%;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+
